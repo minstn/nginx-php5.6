@@ -3,7 +3,6 @@ services:
   build:
     context: .
     dockerfile: Dockerfile
-  container_name: web
   environment:
     - SOME_DEFAULT_VARIABLE=${OTHER_NAME_IN_COOLIFY:-hello} # Creates an environment variable of value "hello" editable in Coolify's UI
   restart: always
