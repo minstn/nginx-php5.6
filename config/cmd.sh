@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-NGINX_ROOT=${NGINX_ROOT:=/var/www}
+NGINX_ROOT=${NGINX_ROOT:=/var/www/app/webroot}
 
 # Display PHP error's or not
 sed -i -e "s/error_reporting =.*=/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT/g" /etc/php/5.6/fpm/php.ini
