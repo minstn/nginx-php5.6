@@ -11,9 +11,9 @@ services:
       # 1. mount your workdir path
       - /var/www:/var/www
       # 2. mount your configuration of site
-      - /mnt/docker/nginx/sites-enabled:/etc/nginx/sites-enabled
+      # - /mnt/docker/nginx/sites-enabled:/etc/nginx/sites-enabled
       # 4. if you want to override php.ini file
-      - /mnt/docker/php/custom.ini:/etc/php/5.6/fpm/conf.d/custom.ini
+      # - /mnt/docker/php/custom.ini:/etc/php/5.6/fpm/conf.d/custom.ini
       # 5. have a cronjob tasks? run the command...
     command:
       # remember to escape variables dollar sign with duplication $$ instead $
