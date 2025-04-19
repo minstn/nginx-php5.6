@@ -12,7 +12,7 @@ services:
       - /var/www:/var/www
       # 2. mount your configuration of site
       # - /mnt/docker/nginx/sites-enabled:/etc/nginx/sites-enabled
-      - /data/coolify/applications/scccokccock4gss4ssgssg88/default.conf:/etc/nginx/sites-enabled/default.conf
+      - /data/coolify/applications/scccokccock4gss4ssgssg88/default.conf:/etc/nginx/sites-available/default.conf
       # 4. if you want to override php.ini file
       # - /mnt/docker/php/custom.ini:/etc/php/5.6/fpm/conf.d/custom.ini
       # 5. have a cronjob tasks? run the command...
