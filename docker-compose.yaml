@@ -3,7 +3,7 @@ services:
     #build:
     #  context: .
     #  dockerfile: Dockerfile
-    image: navidonskis/nginx-php5.6
+    image: minstn/ubuntu24-nginx-php5-6
     environment:
       - SOME_DEFAULT_VARIABLE=${OTHER_NAME_IN_COOLIFY:-hello} # Creates an environment variable of value "hello" editable in Coolify's UI
     restart: always
@@ -19,7 +19,7 @@ services:
       # 4. if you want to override php.ini file
       # - /mnt/docker/php/custom.ini:/etc/php/5.6/fpm/conf.d/custom.ini
       # 5. have a cronjob tasks? run the command...
-    command:
+    # command:
       # remember to escape variables dollar sign with duplication $$ instead $
-      - '* * * * * echo "Hello $$(date)" >> /var/log/cron.log 2>&1'
-      - '* * * * * echo "Hello world !" >> /var/log/cron.log 2>&1'
+      # - '* * * * * echo "Hello $$(date)" >> /var/log/cron.log 2>&1'
+      # - '* * * * * echo "Hello world !" >> /var/log/cron.log 2>&1'
