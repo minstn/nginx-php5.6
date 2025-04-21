@@ -16,8 +16,8 @@ sed -i -e "s/worker_processes 5/worker_processes $procs/" /etc/nginx/nginx.conf
 sed -i -e "s#%%NGINX_ROOT%%#$NGINX_ROOT#" /etc/nginx/sites-available/default.conf
 
 # Again set the right permissions (needed when mounting from a volume)
-set +e 
-chown -Rf www-data.www-data $NGINX_ROOT
+set +e
+chown -Rf www-data:www-data $NGINX_ROOT
 set -e
 
 # if commands are entered for crontab - check it

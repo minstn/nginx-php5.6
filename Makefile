@@ -1,4 +1,4 @@
-NAME = nginx-php5.6
+NAME = ubuntu24-nginx-php5-6
 
 build:
 	docker build -t $(NAME) .
