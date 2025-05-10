@@ -87,10 +87,16 @@ docker ps -a
 docker exec -it <image_id>  bash
 ```
 
+Example
+```sh
+docker exec -it 73277be44a70  bash
+```
+
+
 Tag and publish the image to dockers image repo as `stable`
 
 ```sh
-docker tag <image_id> minstn/ubuntu24-nginx-php5-6:stable
+docker tag 73277be44a70 minstn/ubuntu24-nginx-php5-6:stable
 docker push minstn/ubuntu24-nginx-php5-6
 ```
 
