@@ -5,6 +5,15 @@ Good for legacy apps based on php5.6 like cakephp projects etc.
 If you have an idea how to improve it, contact me <minstn@gmail.com>.
 Webroot is set to `/var/www/app/webroot`, good for cakephp apps.
 
+Services are started using a supervisord. Supervised programs are below:
+
+```
+[program:php5-fpm]
+[program:nginx]
+[program:crond]
+[program:memcached]
+```
+
 ## Includes `php5.6-fpm` modules:
 
 ```
@@ -66,7 +75,6 @@ lrwxrwxrwx 1 root root   41 Apr 20 15:08 25-memcached.ini -> /etc/php/5.6/mods-a
 
  * nginx, memcached, curl, pwgen, supervisor
  * php 5.6 (fpm, cli, curl, gd, intl, mcrypt, mbstring, memcache, memcached, sqlite, tidy, xmlrpc, xsl, pgsql, mongo, ldap) full list 👆
-
 
 ## Usage
 
