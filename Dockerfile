@@ -4,7 +4,7 @@ ENV DEFAULT_LOCALE=en_US \
 	NGINX_VERSION=stable
 
 # let the container know that there is no tty
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Surpress Upstart errors/warning
 RUN dpkg-divert --local --rename --add /sbin/initctl && \

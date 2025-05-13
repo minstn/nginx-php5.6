@@ -81,7 +81,7 @@ lrwxrwxrwx 1 root root   41 Apr 20 15:08 25-memcached.ini -> /etc/php/5.6/mods-a
 Build your image.
 
 ```sh
-docker build -t ubuntu24-nginx-php5-6:v1 --progress=plain  .
+docker build -t ubuntu24-nginx-php5-6:v1 --platform linux/amd64,linux/arm64 --progress=plain  .
 ```
 
 Bind local port 8081 to the container.
@@ -99,7 +99,6 @@ Example
 ```sh
 docker exec -it 73277be44a70  bash
 ```
-
 
 Tag and publish the image to dockers image repo as `stable`
 
